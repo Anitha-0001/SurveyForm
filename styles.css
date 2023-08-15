@@ -1,0 +1,74 @@
+:root{
+    --font-family: Poppins, sans-serif ;
+    --whitecolor:#f3f3f3;
+    --darkblue:rgb(28, 28, 49,0.8);
+    --green:#37af65;
+    --gray:#656b71;
+}
+*,::after, ::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    font-weight: 400;
+    background: linear-gradient(to bottom right, rgb(0, 0, 128,0.5), rgb(96, 0, 128,0.3)), url("./office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+    color: var(--whitecolor);
+}
+button, input, textarea, select{
+    font-family: inherit;
+}
+
+header{
+    text-align: center;
+    text-shadow: 1px 1px #333;
+}
+
+#title{
+    padding-top:2.6rem ;
+    margin:0;
+    font-weight: bold;
+    line-height: 1.2;
+}
+form{
+    background-color: var(--darkblue);    
+    border-radius: 5px;
+    padding: 20px;
+    width:54%;
+    margin:auto;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin:1.5rem;
+}
+#description{
+    font-size: 1.1rem;
+}
+form label, .form-group p, button, .form-group::placeholder{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.form-control, textarea{
+    border-radius: 5px;
+    padding:8px 12px;
+    border: 1px solid var(--whitecolor);
+}
+button{
+    background-color: var(--green);
+    color: var(--whitecolor);
+    cursor: pointer;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    padding:10px;
+}
+form label{
+    padding-bottom: 5px;
+}
+.form-group input[type="radio"],.form-group input[type="checkbox"]{
+    width:20px;
+    height:20px;
+}
